@@ -54,6 +54,7 @@ Gambar 1. Isi Dataset Crop Recommendation
 | ph | Keasaman tanah |
 | rainfall | Curah hujan (mm) |
 | label | Target (nama tanaman) |
+
 Tabel 1. Fitur Dataset
 ### Visualisasi:
 - Distribusi tanaman divisualisasikan dengan countplot
