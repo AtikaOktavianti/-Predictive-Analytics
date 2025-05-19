@@ -10,6 +10,7 @@ Kebanyakan petani masih mengandalkan intuisi dan pengalaman tanpa dasar data yan
 Dataset berasal dari Kaggle:
 Crop Recommendation Dataset by Atharva Ingle
 (https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
+
 Dataset ini digunakan dalam banyak penelitian, contohnya:
 - “Crop Recommendation System using Machine Learning” (IJSRCS, 2018)
 - “Agricultural Yield Prediction using Supervised Learning” (IEEE, 2020)
@@ -40,6 +41,7 @@ Data dipersiapkan dengan langkah-langkah sebagai berikut:
 - Tidak ada missing value
 - Label terdiri dari 22 jenis tanaman, distribusi label seimbang
 ![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/isi%20dataset.png?raw=true)
+Gambar 1. Isi Dataset Crop Recommendation
 ### Fitur:
 | Fitur | Deskripsi |
 | ------ | ------ |
@@ -51,9 +53,14 @@ Data dipersiapkan dengan langkah-langkah sebagai berikut:
 | ph | Keasaman tanah |
 | rainfall | Curah hujan (mm) |
 | label | Target (nama tanaman) |
+Tabel 1. Fitur Dataset
 ### Visualisasi:
 - Distribusi tanaman divisualisasikan dengan countplot
+![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/distribusi.png?raw=true)
+Gambar 2. Distribusi Tanaman pada dataset
 - Korelasi antar fitur divisualisasikan dengan heatmap
+![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/korelasi%20antar%20fitur.png?raw=true)
+Gambar 3. Korelasi antar fitur
 contoh kode:
 ```
 plt.figure(figsize=(12, 6))
@@ -87,6 +94,8 @@ Random Forest merupakan algoritma berbasis ensemble learning yang terdiri dari b
 4. Kekurangan:
 - Kurang efisien pada data yang sangat besar (karena banyak pohon yang harus dievaluasi).
 - Interpretasi tidak semudah model linear/logistik pada level matematis.
+![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/CM%20RF.png?raw=true)
+Gambar 4. Confussion Matrix Random forest
 
 ### XGBoost
 XGBoost (Extreme Gradient Boosting) adalah metode boosting berbasis pohon yang membangun model secara sekuensial untuk memperbaiki kesalahan dari model sebelumnya. Algoritma ini mengoptimalkan fungsi objektif menggunakan metode gradient descent dan dilengkapi dengan regularisasi L1 dan L2 untuk mencegah overfitting.
@@ -105,6 +114,8 @@ XGBoost (Extreme Gradient Boosting) adalah metode boosting berbasis pohon yang m
 4. Kekurangan:
 - Waktu pelatihan lebih lama dibanding Random Forest.
 - Lebih kompleks untuk dituning.
+![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/CM%20XGB.png?raw=true)
+Gambar 5. Confussion Matrix XGBoost
 
 ### Support Vector Machine (SVM)
 Support Vector Machine adalah algoritma klasifikasi yang bekerja dengan mencari hyperplane terbaik yang memisahkan kelas-kelas data dengan margin maksimum. SVM sangat efektif untuk dataset berdimensi tinggi dan dapat bekerja dengan kernel non-linear (RBF, polynomial, dll).
@@ -121,6 +132,8 @@ Support Vector Machine adalah algoritma klasifikasi yang bekerja dengan mencari 
 - Tidak scalable untuk dataset besar karena kompleksitas komputasi O(n²) atau lebih.
 - Membutuhkan tuning kernel dan regularisasi agar performa optimal.
 - Sensitif terhadap outlier dan skala fitur, sehingga wajib melakukan normalisasi.
+![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/CM%20SVM.png?raw=true)
+Gambar 6. Confussion Matrix SVM
 
 ## 6. Evaluasi
 ### Metrik yang digunakan:
@@ -134,6 +147,10 @@ Support Vector Machine adalah algoritma klasifikasi yang bekerja dengan mencari 
 | Random Forest | 0.99 |
 | XGBoost | 0.99 |
 | SVM | 0.98 |
+
+### Perbandingan ketiga model:
+![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/perbandingan.png?raw=true)
+Gambar 7. Perbandingan Model
 
 ## Referensi
 1. Esairina, E. (2023). Memahami confusion matrix: Accuracy, precision, recall, specificity, dan F1-score. Medium. https://esairina.medium.com/memahami-confusion-matrix-accuracy-precision-recall-specificity-dan-f1-score-610d4f0db7cf
