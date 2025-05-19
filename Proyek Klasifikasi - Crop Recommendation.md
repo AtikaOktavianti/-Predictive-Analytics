@@ -39,6 +39,7 @@ Data dipersiapkan dengan langkah-langkah sebagai berikut:
 - 2.200 baris, 7 fitur input + 1 label target
 - Tidak ada missing value
 - Label terdiri dari 22 jenis tanaman, distribusi label seimbang
+![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/isi%20dataset.png?raw=true)
 ### Fitur:
 | Fitur | Deskripsi |
 | ------ | ------ |
