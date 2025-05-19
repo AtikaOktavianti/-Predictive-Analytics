@@ -156,6 +156,8 @@ Gambar 6. Confussion Matrix SVM
 | XGBoost | 0.99 |
 | SVM | 0.98 |
 
+Tabel 2. Accuracy model
+
 ### Perbandingan ketiga model:
 ![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/perbandingan.png?raw=true)
 Gambar 7. Perbandingan Model
