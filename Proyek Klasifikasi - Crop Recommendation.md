@@ -60,9 +60,15 @@ Tabel 1. Fitur Dataset
 - Distribusi tanaman divisualisasikan dengan countplot
 ![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/distribusi.png?raw=true)
 Gambar 2. Distribusi Tanaman pada dataset
+
+Distribusi tanaman yang seimbang adalah kondisi ideal untuk pelatihan model klasifikasi, karena meningkatkan keadilan prediksi dan menyederhanakan proses evaluasi dan pemodelan.
+
 - Korelasi antar fitur divisualisasikan dengan heatmap
 ![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/korelasi%20antar%20fitur.png?raw=true)
 Gambar 3. Korelasi antar fitur
+
+Hampir semua fitur tidak memiliki hubungan korelasi yang kuat satu sama lain, kecuali antara P dan K. Ini menunjukkan bahwa sebagian besar fitur dapat dianggap independen dan tidak redundant, baik untuk analisis maupun pemodelan machine learning.
+
 contoh kode:
 ```
 plt.figure(figsize=(12, 6))
@@ -153,6 +159,19 @@ Gambar 6. Confussion Matrix SVM
 ### Perbandingan ketiga model:
 ![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/perbandingan.png?raw=true)
 Gambar 7. Perbandingan Model
+
+### Interpretasi
+1. Semua model memiliki performa sangat tinggi, dengan akurasi di atas 98%, menandakan bahwa dataset kemungkinan bersih, seimbang, dan mudah dipisahkan antar kelas.
+2. Random Forest menghasilkan akurasi tertinggi (99.55%), sedikit lebih baik dari XGBoost dan SVM.
+3. XGBoost sangat mendekati Random Forest, dengan selisih hanya 0.23%. Ini menunjukkan bahwa keduanya bekerja sangat baik untuk dataset ini.
+4. SVM sedikit di bawah dua model lainnya, namun tetap dengan akurasi sangat baik.
+
+### Kesimpulan 
+1. Random Forest adalah model terbaik dalam eksperimen ini, meskipun keunggulannya hanya sedikit.
+2. Ketiga model layak digunakan, tergantung pada kebutuhan:
+- Jika mengutamakan akurasi → Random Forest
+- Jika butuh model efisien dan kuat terhadap overfitting → XGBoost
+- Jika dataset kecil dan linearitas cukup → SVM
 
 ## Referensi
 1. Esairina, E. (2023). Memahami confusion matrix: Accuracy, precision, recall, specificity, dan F1-score. Medium. https://esairina.medium.com/memahami-confusion-matrix-accuracy-precision-recall-specificity-dan-f1-score-610d4f0db7cf
