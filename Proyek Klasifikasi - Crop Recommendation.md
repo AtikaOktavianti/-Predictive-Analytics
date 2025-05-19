@@ -1,4 +1,4 @@
-# Proyek Klasifikasi - Crop Recommendation
+# Predictive Analytics - Crop Recommendation
 Domain yang saya pilih untuk proyek machine learning ini adalah Pertanian, dengan judul Rekomendasi jenis tanaman berdasarkan kondisi lingkungan.
 
 ## 1. Domain Proyek
