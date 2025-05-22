@@ -156,7 +156,7 @@ Penjelasan:
 - FP (False Positive): Jumlah data negatif yang diprediksi secara tidak benar sebagai positif (Kesalahan Tipe I).
 - FN (False Negative): Jumlah data positif yang diprediksi secara tidak benar sebagai negatif (Kesalahan Tipe II).
 
-### Hasil accuracy 3 model yang dilatih:
+### 1. Hasil accuracy 3 model yang dilatih:
 | Model | Accuracy |
 | ------ | ------ |
 | Random Forest | 0.99 |
@@ -164,6 +164,10 @@ Penjelasan:
 | SVM | 0.98 |
 
 Tabel 2. Accuracy model
+
+### 2. Precision, Recall, dan F1-score
+a. Random Forest
+
 
 ### Perbandingan ketiga model:
 ![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/perbandingan.png?raw=true)
