@@ -171,7 +171,9 @@ a. Random Forest
 Macro avg Precision / Recall / F1: 1.00 / 1.00 / 1.00
 
 Hampir semua kelas diprediksi sempurna, dengan beberapa pengecualian seperti label 2 (f1-score 0.97) dan 20 (f1-score 0.97) yang menunjukkan ada sedikit ketidaksempurnaan. Selanjutnya, tidak ada kelas yang sangat lemah; model sangat stabil dan andal.
+
 ![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/RF.png?raw=true)
+
 Gambar 7. Hasil Evaluasi Random Forest
 
 b. XGBoost
