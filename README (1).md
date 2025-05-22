@@ -170,7 +170,7 @@ a. Random Forest
 
 Macro avg Precision / Recall / F1: 1.00 / 1.00 / 1.00
 
-Hampir semua kelas diprediksi sempurna, dengan beberapa pengecualian seperti label 2 (f1-score 0.97) dan 20 (f1-score 0.97) yang menunjukkan ada sedikit ketidaksempurnaan. Selanjtunya, Tidak ada kelas yang sangat lemah; model sangat stabil dan andal.
+Hampir semua kelas diprediksi sempurna, dengan beberapa pengecualian seperti label 2 (f1-score 0.97) dan 20 (f1-score 0.97) yang menunjukkan ada sedikit ketidaksempurnaan. Selanjutnya, tidak ada kelas yang sangat lemah; model sangat stabil dan andal.
 ![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/RF.png?raw=true)
 Gambar 7. Hasil Evaluasi Random Forest
 
@@ -180,6 +180,7 @@ Macro avg Precision / Recall / F1: 0.99 / 0.99 / 0.99
 
 Beberapa kelas menunjukkan penurunan kecil, misalnya label 10 (recall 0.90, f1-score 0.95), 13, dan 14 (f1-score 0.98). Meskipun akurasi hampir sama dengan Random Forest, XGBoost sedikit kurang konsisten di beberapa kelas.
 ![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/XGB.png?raw=true)
+
 Gambar 8. Hasil Evaluasi XGBoost
 
 c. Support Vector Machine (SVM)
@@ -187,7 +188,7 @@ c. Support Vector Machine (SVM)
 Macro avg Precision / Recall / F1: 0.99 / 0.98 / 0.98
 
 Performa sedikit lebih rendah terutama pada kelas rice (recall 0.75, f1-score 0.86) dan jute (precision 0.80, f1-score 0.89), yang menandakan kemungkinan kesulitan model mengenali ciri khas dari kelas-kelas ini. Kelas lain sebagian besar diprediksi dengan baik (f1-score ≥ 0.97).
-![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/svm.pngraw=true)
+![alt text](https://github.com/AtikaOktavianti/-Predictive-Analytics/blob/main/svm.png?raw=true)
 Gambar 9. Hasil Evaluasi SVM
 
 ### Analisis Performa Antar Kelas
