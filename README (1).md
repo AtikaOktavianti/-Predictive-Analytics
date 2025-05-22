@@ -166,7 +166,7 @@ Penjelasan:
 Tabel 2. Accuracy model
 
 ### 2. Precision, Recall, dan F1-score
-a. Random Forest
+**a. Random Forest**
 
 Macro avg Precision / Recall / F1: 1.00 / 1.00 / 1.00
 
@@ -176,7 +176,7 @@ Hampir semua kelas diprediksi sempurna, dengan beberapa pengecualian seperti lab
 
 Gambar 7. Hasil Evaluasi Random Forest
 
-b. XGBoost
+**b. XGBoost**
 
 Macro avg Precision / Recall / F1: 0.99 / 0.99 / 0.99
 
@@ -186,7 +186,7 @@ Beberapa kelas menunjukkan penurunan kecil, misalnya label 10 (recall 0.90, f1-s
 
 Gambar 8. Hasil Evaluasi XGBoost
 
-c. Support Vector Machine (SVM)
+**c. Support Vector Machine (SVM)**
 
 Macro avg Precision / Recall / F1: 0.99 / 0.98 / 0.98
 
